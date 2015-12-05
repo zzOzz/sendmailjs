@@ -3,7 +3,7 @@
 <component name="org.nuxeo.ecm.platform.actions.MailtoAction">
 
 	<extension point="actions" target="org.nuxeo.ecm.platform.actions.ActionService">
-		<action icon="/icons/mail.gif" id="sendEmail" label="action.email.document" order="20">
+		<action icon="/icons/mail.png" id="sendEmail" label="action.email.document" order="20">
 			<category>DOCUMENT_UPPER_ACTION</category>
 			<filter-id>not_folder</filter-id>
 		</action>

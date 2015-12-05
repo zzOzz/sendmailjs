@@ -42,7 +42,7 @@ function assignClickToEmailListButton() {
 
 						docLink = docLink.split("?");
 						docLink = docLink[0];
-						mailtoBody += "Document Nuxeo%0D%0ATitre: " + docTitle + "%0D%0ALien: " + docLink + "%0D%0A%0D%0A";
+						mailtoBody += "Document Nuxeo%0D%0ATitre: " + docTitle + "%0D%0ALien: " + encodeURI(docLink) + "%0D%0A%0D%0A";
 						
 						docCount++;
 					}
@@ -54,7 +54,7 @@ function assignClickToEmailListButton() {
 		
 		if(docCount == 0) {
 			//If no document has been selected, we will send the current location.
-			var currentDocument = location.protocol + '//' + location.host + location.pathname;
+			var currentDocument = location.protocol + '//' + encodeURI(location.host + location.pathname);
 			mailtoBody += "Document Nuxeo%0D%0ALien: " + currentDocument + "%0D%0A%0D%0A";
 		}
 		

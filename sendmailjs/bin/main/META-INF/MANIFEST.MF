@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: sendmailjs
+Bundle-Name: sendmailjs
+Bundle-Version: 1.0.qualifier
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Nuxeo
+Nuxeo-Component: OSGI-INF/extensions/fr.udl.nuxeo.sendmailjs.MailtoAction.xml, OSGI-INF/extensions/fr.udl.nuxeo.sendmailjs.MailtoListAction.xml, OSGI-INF/extensions/fr.udl.nuxeo.sendmailjs.MailtoJs.xml, OSGI-INF/extensions/fr.udl.nuxeo.sendmailjs.MailtoJsList.xml
+

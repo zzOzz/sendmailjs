@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="org.nuxeo.theme.mailtojslist">
+
+  <require>org.nuxeo.theme.nuxeo.webapp</require>
+ 
+   <extension target="org.nuxeo.ecm.platform.WebResources" point="bundles">
+    <bundle name="nuxeo_includes">
+      <resources append="true">
+        <resource>mailto-list.js</resource>
+      </resources>
+    </bundle>
+  </extension>
+  
+    <extension target="org.nuxeo.ecm.platform.WebResources" point="resources">
+    <resource name="mailto-list.js">
+      <path>mailto-list.js</path>
+    </resource>
+  </extension>
+  
+</component>
